@@ -1,0 +1,9 @@
+<h1>AuthorsBooks#index</h1>
+<% @authors_books.each do |book| %>
+  <%= book.author.name %>
+  <ul>
+    <li><%= book.title %></li>
+    <li><%= book.pages %></li>
+    <li><%= book.genre %></li>
+  </ul>
+<% end %>
